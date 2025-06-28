@@ -8,7 +8,7 @@ def hellow_world():
     return 'HELLOW WORLD FROM FLASK'
 
 
-@app_route('/test')
+@app.route('/test')
 def test():
     return 'TEST FROM FLASK'
 

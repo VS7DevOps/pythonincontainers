@@ -17,7 +17,6 @@ EXPOSE 5000
 ## Only RUN commands are executed at build phase.
 ## EXPOSE and CMD only update the Metadata of the created image
  
-CMD python flask_hello.py
-
+CMD ["python", "flask_hello.py"]
 
 ## Once all commands in the Dockerfile are executed against the temporary build container t gets frozen and packed into a portable Docker Image.
